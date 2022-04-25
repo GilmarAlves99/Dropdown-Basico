@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bangers&display=swap');
+body {
+    font-family: 'Courier New', Courier, monospace;
+    all: inherit;
+    background-color: #f1f1f1;
+}
+
+.total {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+    font-family: 'Alfa Slab One', cursive;
+    text-align: center;
+    color: #10403B;
+    letter-spacing: 2px;
+    word-spacing: 20px;
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 20%;
+    }
+    to {
+        margin-left: 0%;
+    }
+}
+
+ul {
+    overflow: hidden;
+    padding: 0px;
+    margin: 0;
+    background-color: #10403B;
+    list-style-type: none;
+}
+
+li {
+    float: left;
+}
+
+li a,
+.dropbtn {
+    display: inline-block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover,
+.dropdown:hover .dropbtn {
+    color: #eeeeee;
+    background-color: #127369;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    background-color: #10403B;
+    z-index: 5;
+    position: absolute;
+    width: 150px;
+}
+
+.dropdown-content a {
+    text-align: left;
+    display: block;
+    color: #ffffff;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a:hover {
+    color: #ffffff;
+}
+
+.conteudo {
+    width: 100%;
+    min-height: 100%;
+    background-color: #8AA6A3;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+section {
+    z-index: 0;
+    overflow: initial;
+    color: #10403B;
+    text-align: justify;
+    float: left;
+    flex: 1;
+}
+
+h3 {
+    text-align: center;
+}
+
+p {
+    text-overflow: ellipsis;
+    font-size: 1.0em;
+    padding: 0 10px;
+}
+
+footer {
+    background: #10403B;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #eeeeee;
+    font-size: 1.3em;
+    font-family: 'Bangers', cursive;
+    letter-spacing: 5px;
+}
+
+@media screen and (max-width: 460px) {
+    p {
+        font-size: 0.6em;
+    }
+    footer,
+    nav,
+    h1,
+    h3 {
+        font-size: 0.6em;
+    }
+    li {
+        padding: 0px 0px;
+        font-size: 0.4em;
+    }
+    @keyframes slidein {
+        from {
+            margin-left: 10%;
+        }
+        to {
+            margin-left: 0%;
+        }
+    }
+}
+
+@media screen and (min-width: 461px) and (max-width: 660px) {
+    p,
+    li {
+        font-size: 0.6em;
+    }
+    h1 {
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (min-width: 661px) and (max-width: 990px) {
+    p {
+        font-size: 0.8rem;
+    }
+}
